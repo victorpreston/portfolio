@@ -1,0 +1,53 @@
+.about-area {
+  position: relative;
+}
+
+.about {
+  padding-right: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.about > * {
+  flex: 1;
+}
+
+.about-details p {
+  line-height: 2;
+}
+
+.about-action {
+  margin-top: 25px;
+}
+
+.about-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-image img {
+  width: 320px;
+  border-radius: 10px;
+  transform: scale(0.95);
+  filter: grayscale(1);
+  transition: 1s all;
+}
+
+.about-image:hover img {
+  transform: scale(1);
+  filter: grayscale(0);
+}
+
+@media only screen and (max-width: 768px) {
+  .about {
+    text-align: center;
+    padding-right: 0;
+    flex-direction: column-reverse;
+  }
+
+  .about > * {
+    flex: 1 1 100%;
+  }
+}
